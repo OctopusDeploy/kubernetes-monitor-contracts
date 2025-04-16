@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "yaml_manifest.proto";
+
+message Event {
+  google.protobuf.Timestamp first_observed_time = 1;
+  google.protobuf.Timestamp last_observed_time = 2;
+  int32 count = 3;
+  string action = 4;
+  string reason = 5;
+  string note = 6;
+  string reporting_controller = 7;
+  string reporting_instance = 8;
+  string type = 9;
+  YamlManifest manifest = 10;
+}

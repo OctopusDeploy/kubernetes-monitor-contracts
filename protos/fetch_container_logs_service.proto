@@ -1,0 +1,7 @@
+syntax = "proto3";
+import "fetch_container_logs_request.proto";
+import "fetch_container_logs_response.proto";
+
+service FetchContainerLogsService {
+  rpc FetchContainerLogs (stream FetchContainerLogsResponse) returns (stream FetchContainerLogsRequest);
+}

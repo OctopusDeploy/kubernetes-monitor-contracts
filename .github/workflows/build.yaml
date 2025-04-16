@@ -1,0 +1,29 @@
+name: "Build"
+run-name: "Build"
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+    pull_request:
+        types: [opened, synchronize, reopened]
+
+jobs: 
+    test: 
+        runs-on: ubuntu-latest
+        permissions: # https://github.com/dorny/test-reporter/issues/168
+            statuses: write
+            checks: write
+            contents: read
+            pull-requests: write 
+
+        steps:
+            - uses: actions/checkout@v4
+            - name: Buf 
+              uses: bufbuild/buf-action@v1
+              with: 
+                push: false
+                
+            # - name: Build Dotnet library
+            # - name: Build Golang library
+

@@ -138,8 +138,8 @@ const file_error_proto_rawDesc = "" +
 	"\x16ERROR_CODE_UNSPECIFIED\x10\x00\x12\x19\n" +
 	"\x15ERROR_CODE_UNEXPECTED\x10\x01\x12\x17\n" +
 	"\x13ERROR_CODE_CONFLICT\x10\x02\x12\x18\n" +
-	"\x14ERROR_CODE_NOT_FOUND\x10\x03BwB\n" +
-	"ErrorProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x14ERROR_CODE_NOT_FOUND\x10\x03B~B\n" +
+	"ErrorProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_error_proto_rawDescOnce sync.Once

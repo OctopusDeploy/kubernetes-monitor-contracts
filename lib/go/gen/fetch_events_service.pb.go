@@ -26,7 +26,7 @@ const file_fetch_events_service_proto_rawDesc = "" +
 	"\n" +
 	"\x1afetch_events_service.proto\x1a\x1afetch_events_request.proto\x1a\x1bfetch_events_response.proto2R\n" +
 	"\x12FetchEventsService\x12<\n" +
-	"\vFetchEvents\x12\x14.FetchEventsResponse\x1a\x13.FetchEventsRequest(\x010\x01B\x84\x01B\x17FetchEventsServiceProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\vFetchEvents\x12\x14.FetchEventsResponse\x1a\x13.FetchEventsRequest(\x010\x01B\x8b\x01B\x17FetchEventsServiceProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var file_fetch_events_service_proto_goTypes = []any{
 	(*FetchEventsResponse)(nil), // 0: FetchEventsResponse

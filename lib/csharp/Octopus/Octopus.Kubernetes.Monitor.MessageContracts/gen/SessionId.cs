@@ -25,10 +25,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChBzZXNzaW9uX2lkLnByb3RvIiEKCVNlc3Npb25JZBIUCgV2YWx1ZRgBIAEo",
-            "CVIFdmFsdWVCe0IOU2Vzc2lvbklkUHJvdG9QAVo5Z2l0aHViLmNvbS9vY3Rv",
-            "cHVzZGVwbG95L2t1YmVybmV0ZXMtbW9uaXRvci1jb250cmFjdHMvZ2VuqgIr",
-            "T2N0b3B1cy5LdWJlcm5ldGVzLk1vbml0b3IuTWVzc2FnZUNvbnRyYWN0c2IG",
-            "cHJvdG8z"));
+            "CVIFdmFsdWVCggFCDlNlc3Npb25JZFByb3RvUAFaQGdpdGh1Yi5jb20vb2N0",
+            "b3B1c2RlcGxveS9rdWJlcm5ldGVzLW1vbml0b3ItY29udHJhY3RzL2xpYi9n",
+            "by9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNzYWdlQ29u",
+            "dHJhY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

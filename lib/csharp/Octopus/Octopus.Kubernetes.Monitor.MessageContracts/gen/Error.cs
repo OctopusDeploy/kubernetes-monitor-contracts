@@ -28,10 +28,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "YWdlEh4KBGNvZGUYAiABKA4yCi5FcnJvckNvZGVSBGNvZGUqdQoJRXJyb3JD",
             "b2RlEhoKFkVSUk9SX0NPREVfVU5TUEVDSUZJRUQQABIZChVFUlJPUl9DT0RF",
             "X1VORVhQRUNURUQQARIXChNFUlJPUl9DT0RFX0NPTkZMSUNUEAISGAoURVJS",
-            "T1JfQ09ERV9OT1RfRk9VTkQQA0J3QgpFcnJvclByb3RvUAFaOWdpdGh1Yi5j",
+            "T1JfQ09ERV9OT1RfRk9VTkQQA0J+QgpFcnJvclByb3RvUAFaQGdpdGh1Yi5j",
             "b20vb2N0b3B1c2RlcGxveS9rdWJlcm5ldGVzLW1vbml0b3ItY29udHJhY3Rz",
-            "L2dlbqoCK09jdG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1lc3NhZ2VDb250",
-            "cmFjdHNiBnByb3RvMw=="));
+            "L2xpYi9nby9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNz",
+            "YWdlQ29udHJhY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.ErrorCode), }, null, new pbr::GeneratedClrTypeInfo[] {

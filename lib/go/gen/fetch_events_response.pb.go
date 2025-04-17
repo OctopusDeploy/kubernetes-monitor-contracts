@@ -85,14 +85,14 @@ var File_fetch_events_response_proto protoreflect.FileDescriptor
 
 const file_fetch_events_response_proto_rawDesc = "" +
 	"\n" +
-	"\x1bfetch_events_response.proto\x1a\x10session_id.proto\x1a\vevent.proto\x1a\verror.proto\"\x8d\x01\n" +
+	"\x1bfetch_events_response.proto\x1a\verror.proto\x1a\vevent.proto\x1a\x10session_id.proto\"\x8d\x01\n" +
 	"\x13FetchEventsResponse\x12)\n" +
 	"\n" +
 	"session_id\x18\x01 \x01(\v2\n" +
 	".SessionIdR\tsessionId\x12\x1e\n" +
 	"\x06events\x18\x02 \x03(\v2\x06.EventR\x06events\x12!\n" +
 	"\x05error\x18\x03 \x01(\v2\x06.ErrorH\x00R\x05error\x88\x01\x01B\b\n" +
-	"\x06_errorB\x85\x01B\x18FetchEventsResponseProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x06_errorB\x8c\x01B\x18FetchEventsResponseProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_fetch_events_response_proto_rawDescOnce sync.Once
@@ -129,9 +129,9 @@ func file_fetch_events_response_proto_init() {
 	if File_fetch_events_response_proto != nil {
 		return
 	}
-	file_session_id_proto_init()
-	file_event_proto_init()
 	file_error_proto_init()
+	file_event_proto_init()
+	file_session_id_proto_init()
 	file_fetch_events_response_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{

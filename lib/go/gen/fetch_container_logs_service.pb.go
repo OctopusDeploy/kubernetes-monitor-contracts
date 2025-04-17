@@ -26,7 +26,7 @@ const file_fetch_container_logs_service_proto_rawDesc = "" +
 	"\n" +
 	"\"fetch_container_logs_service.proto\x1a\"fetch_container_logs_request.proto\x1a#fetch_container_logs_response.proto2n\n" +
 	"\x19FetchContainerLogsService\x12Q\n" +
-	"\x12FetchContainerLogs\x12\x1b.FetchContainerLogsResponse\x1a\x1a.FetchContainerLogsRequest(\x010\x01B\x8b\x01B\x1eFetchContainerLogsServiceProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x12FetchContainerLogs\x12\x1b.FetchContainerLogsResponse\x1a\x1a.FetchContainerLogsRequest(\x010\x01B\x92\x01B\x1eFetchContainerLogsServiceProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var file_fetch_container_logs_service_proto_goTypes = []any{
 	(*FetchContainerLogsResponse)(nil), // 0: FetchContainerLogsResponse

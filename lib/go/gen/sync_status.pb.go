@@ -142,7 +142,7 @@ const file_sync_status_proto_rawDesc = "" +
 	"\x18SYNC_STATUS_CODE_UNKNOWN\x10\x01\x12\"\n" +
 	"\x1eSYNC_STATUS_CODE_NOTAPPLICABLE\x10\x02\x12\x1b\n" +
 	"\x17SYNC_STATUS_CODE_INSYNC\x10\x03\x12\x1e\n" +
-	"\x1aSYNC_STATUS_CODE_OUTOFSYNC\x10\x04B|B\x0fSyncStatusProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x1aSYNC_STATUS_CODE_OUTOFSYNC\x10\x04B\x83\x01B\x0fSyncStatusProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_sync_status_proto_rawDescOnce sync.Once

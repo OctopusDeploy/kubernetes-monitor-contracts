@@ -217,7 +217,7 @@ const file_resource_details_proto_rawDesc = "" +
 	"\x10GroupVersionKind\x12\x14\n" +
 	"\x05group\x18\x01 \x01(\tR\x05group\x12\x18\n" +
 	"\aversion\x18\x02 \x01(\tR\aversion\x12\x12\n" +
-	"\x04kind\x18\x03 \x01(\tR\x04kindB\x81\x01B\x14ResourceDetailsProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x04kind\x18\x03 \x01(\tR\x04kindB\x88\x01B\x14ResourceDetailsProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_resource_details_proto_rawDescOnce sync.Once

@@ -924,7 +924,7 @@ var File_live_status_service_proto protoreflect.FileDescriptor
 
 const file_live_status_service_proto_rawDesc = "" +
 	"\n" +
-	"\x19live_status_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x19desired_resource_id.proto\x1a\x10cluster_id.proto\x1a\x16resource_details.proto\x1a\x11sync_status.proto\x1a\x13yaml_manifest.proto\"\x82\x04\n" +
+	"\x19live_status_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x10cluster_id.proto\x1a\x19desired_resource_id.proto\x1a\x16resource_details.proto\x1a\x11sync_status.proto\x1a\x13yaml_manifest.proto\"\x82\x04\n" +
 	"\x1fUpdateMonitoredResourcesRequest\x12N\n" +
 	"\x17application_instance_id\x18\x01 \x01(\v2\x16.ApplicationInstanceIdR\x15applicationInstanceId\x12)\n" +
 	"\n" +
@@ -1009,7 +1009,7 @@ const file_live_status_service_proto_rawDesc = "" +
 	"\x11LiveStatusService\x12_\n" +
 	"\x18UpdateMonitoredResources\x12 .UpdateMonitoredResourcesRequest\x1a!.UpdateMonitoredResourcesResponse\x12b\n" +
 	"\x19ReplaceMonitoredResources\x12!.ReplaceMonitoredResourcesRequest\x1a\".ReplaceMonitoredResourcesResponse\x12n\n" +
-	"\x1dDeleteChildMonitoredResources\x12%.DeleteChildMonitoredResourcesRequest\x1a&.DeleteChildMonitoredResourcesResponseB\x83\x01B\x16LiveStatusServiceProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x1dDeleteChildMonitoredResources\x12%.DeleteChildMonitoredResourcesRequest\x1a&.DeleteChildMonitoredResourcesResponseB\x8a\x01B\x16LiveStatusServiceProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_live_status_service_proto_rawDescOnce sync.Once
@@ -1106,8 +1106,8 @@ func file_live_status_service_proto_init() {
 		return
 	}
 	file_application_instance_id_proto_init()
-	file_desired_resource_id_proto_init()
 	file_cluster_id_proto_init()
+	file_desired_resource_id_proto_init()
 	file_resource_details_proto_init()
 	file_sync_status_proto_init()
 	file_yaml_manifest_proto_init()

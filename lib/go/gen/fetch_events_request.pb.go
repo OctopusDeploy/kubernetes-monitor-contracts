@@ -101,7 +101,7 @@ var File_fetch_events_request_proto protoreflect.FileDescriptor
 
 const file_fetch_events_request_proto_rawDesc = "" +
 	"\n" +
-	"\x1afetch_events_request.proto\x1a\x10session_id.proto\x1a\x10cluster_id.proto\"\xb0\x01\n" +
+	"\x1afetch_events_request.proto\x1a\x10cluster_id.proto\x1a\x10session_id.proto\"\xb0\x01\n" +
 	"\x12FetchEventsRequest\x12)\n" +
 	"\n" +
 	"session_id\x18\x01 \x01(\v2\n" +
@@ -111,7 +111,7 @@ const file_fetch_events_request_proto_rawDesc = "" +
 	".ClusterIdR\tclusterId\x12\x1c\n" +
 	"\tnamespace\x18\x03 \x01(\tR\tnamespace\x12\x12\n" +
 	"\x04kind\x18\x04 \x01(\tR\x04kind\x12\x12\n" +
-	"\x04name\x18\x05 \x01(\tR\x04nameB\x84\x01B\x17FetchEventsRequestProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x04name\x18\x05 \x01(\tR\x04nameB\x8b\x01B\x17FetchEventsRequestProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_fetch_events_request_proto_rawDescOnce sync.Once
@@ -146,8 +146,8 @@ func file_fetch_events_request_proto_init() {
 	if File_fetch_events_request_proto != nil {
 		return
 	}
-	file_session_id_proto_init()
 	file_cluster_id_proto_init()
+	file_session_id_proto_init()
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{

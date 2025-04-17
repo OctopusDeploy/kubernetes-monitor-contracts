@@ -27,10 +27,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "Cg5sb2dfbGluZS5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5w",
             "cm90byJdCgdMb2dMaW5lEhgKB21lc3NhZ2UYASABKAlSB21lc3NhZ2USOAoJ",
             "dGltZXN0YW1wGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJ",
-            "dGltZXN0YW1wQnlCDExvZ0xpbmVQcm90b1ABWjlnaXRodWIuY29tL29jdG9w",
-            "dXNkZXBsb3kva3ViZXJuZXRlcy1tb25pdG9yLWNvbnRyYWN0cy9nZW6qAitP",
-            "Y3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNzYWdlQ29udHJhY3RzYgZw",
-            "cm90bzM="));
+            "dGltZXN0YW1wQoABQgxMb2dMaW5lUHJvdG9QAVpAZ2l0aHViLmNvbS9vY3Rv",
+            "cHVzZGVwbG95L2t1YmVybmV0ZXMtbW9uaXRvci1jb250cmFjdHMvbGliL2dv",
+            "L2dlbqoCK09jdG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1lc3NhZ2VDb250",
+            "cmFjdHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

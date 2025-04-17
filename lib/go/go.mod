@@ -1,4 +1,4 @@
-module github.com/octopusdeploy/kubernetes-monitor-contracts
+module github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go
 
 go 1.24
 

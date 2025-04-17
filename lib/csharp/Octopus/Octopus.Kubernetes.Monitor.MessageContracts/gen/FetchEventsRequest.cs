@@ -24,17 +24,17 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
     static FetchEventsRequestReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpmZXRjaF9ldmVudHNfcmVxdWVzdC5wcm90bxoQc2Vzc2lvbl9pZC5wcm90",
-            "bxoQY2x1c3Rlcl9pZC5wcm90byKwAQoSRmV0Y2hFdmVudHNSZXF1ZXN0EikK",
+            "ChpmZXRjaF9ldmVudHNfcmVxdWVzdC5wcm90bxoQY2x1c3Rlcl9pZC5wcm90",
+            "bxoQc2Vzc2lvbl9pZC5wcm90byKwAQoSRmV0Y2hFdmVudHNSZXF1ZXN0EikK",
             "CnNlc3Npb25faWQYASABKAsyCi5TZXNzaW9uSWRSCXNlc3Npb25JZBIpCgpj",
             "bHVzdGVyX2lkGAIgASgLMgouQ2x1c3RlcklkUgljbHVzdGVySWQSHAoJbmFt",
             "ZXNwYWNlGAMgASgJUgluYW1lc3BhY2USEgoEa2luZBgEIAEoCVIEa2luZBIS",
-            "CgRuYW1lGAUgASgJUgRuYW1lQoQBQhdGZXRjaEV2ZW50c1JlcXVlc3RQcm90",
-            "b1ABWjlnaXRodWIuY29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRlcy1tb25p",
-            "dG9yLWNvbnRyYWN0cy9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRv",
-            "ci5NZXNzYWdlQ29udHJhY3RzYgZwcm90bzM="));
+            "CgRuYW1lGAUgASgJUgRuYW1lQosBQhdGZXRjaEV2ZW50c1JlcXVlc3RQcm90",
+            "b1ABWkBnaXRodWIuY29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRlcy1tb25p",
+            "dG9yLWNvbnRyYWN0cy9saWIvZ28vZ2VuqgIrT2N0b3B1cy5LdWJlcm5ldGVz",
+            "Lk1vbml0b3IuTWVzc2FnZUNvbnRyYWN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.SessionIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.SessionIdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.FetchEventsRequest), global::Octopus.Kubernetes.Monitor.MessageContracts.FetchEventsRequest.Parser, new[]{ "SessionId", "ClusterId", "Namespace", "Kind", "Name" }, null, null, null, null)
           }));

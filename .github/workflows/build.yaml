@@ -50,5 +50,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         name: Upload csharp sdk
         with:
-          path: Octopus.Kubernetes.Monitor.MessageContracts.${{ env.version }}
+          path: Octopus.Kubernetes.Monitor.MessageContracts.${{ env.version }}.nupkg
 

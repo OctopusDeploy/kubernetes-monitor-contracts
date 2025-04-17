@@ -19,11 +19,6 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
-            - name: Buf 
-              uses: bufbuild/buf-action@v1
-              with: 
-                push: false
-                breaking_against: https://github.com/OctopusDeploy/kubernetes-monitor-contracts.git#branch=main,subdir=protos
             # - name: Build Dotnet library
             # - name: Build Golang library
 

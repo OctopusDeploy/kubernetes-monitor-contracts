@@ -7,12 +7,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 env:
-  VERSION:
+  VERSION: ""
   
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login != 'team-modern-deployments-bot'
+    if: github.event.pull_request.user.login != 'team-modern-deployments-bot' && !startsWith(github.event.release.tag_name,"golang-sdk-v")
     permissions: # https://github.com/dorny/test-reporter/issues/168
       statuses: write
       checks: write
@@ -41,7 +41,7 @@ jobs:
         if: github.event_name == 'release'
         id: release_version
         run: |
-          echo "VERSION=${{ github.event.release.tag_name }}" >> "$GITHUB_ENV"
+          echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-sdk-v//')" >> "$GITHUB_ENV"
 
       - name: Build csharp sdk debug
         if: github.event_name == 'pull_request'

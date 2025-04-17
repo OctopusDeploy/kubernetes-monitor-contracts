@@ -23,7 +23,7 @@ jobs:
               uses: bufbuild/buf-action@v1
               with: 
                 push: false
-                breaking_against: .git#branch=main,subdir=proto
+                breaking_against: .git#branch=main,subdir=protos
             # - name: Build Dotnet library
             # - name: Build Golang library
 

@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+// Machine ID in Octopus
+message ClusterId {
+  string value = 1;
+}

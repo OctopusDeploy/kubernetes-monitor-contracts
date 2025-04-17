@@ -1,0 +1,14 @@
+# For details on buf.yaml configuration, visit https://buf.build/docs/configuration/v2/buf-yaml
+version: v2
+lint:
+  use:
+    - BASIC
+  except:
+  # Temporary ignore these linting rules as our protos currently don't follow them
+    - FIELD_LOWER_SNAKE_CASE
+    - PACKAGE_DEFINED
+breaking:
+  use:
+    - FILE
+modules:
+  - path: protos

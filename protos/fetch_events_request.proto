@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "cluster_id.proto";
+import "session_id.proto";
+
+message FetchEventsRequest {
+  SessionId session_id = 1;
+  ClusterId cluster_id = 2;
+  string namespace = 3;
+  string kind = 4;
+  string name = 5;
+}

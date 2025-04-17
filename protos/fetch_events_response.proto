@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "error.proto";
+import "event.proto";
+import "session_id.proto";
+
+message FetchEventsResponse {
+  SessionId session_id = 1;
+  repeated Event events = 2;
+  optional Error error = 3;
+}

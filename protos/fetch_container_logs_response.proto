@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "error.proto";
+import "log_line.proto";
+import "session_id.proto";
+
+message FetchContainerLogsResponse {
+  SessionId session_id = 1;
+  repeated LogLine log_lines = 2;
+  optional Error error = 3;
+}

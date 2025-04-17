@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message SyncStatus {
+  SyncStatusCode sync_status_code = 1;
+  string message = 2;
+}
+
+enum SyncStatusCode {
+  SYNC_STATUS_CODE_UNSPECIFIED = 0;
+  SYNC_STATUS_CODE_UNKNOWN = 1;
+  SYNC_STATUS_CODE_NOTAPPLICABLE = 2;
+  SYNC_STATUS_CODE_INSYNC = 3;
+  SYNC_STATUS_CODE_OUTOFSYNC = 4;
+}

@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message SessionId {
+  string value = 1;
+}

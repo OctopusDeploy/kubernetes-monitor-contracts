@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message YamlManifest {
+  string value = 1;
+}

@@ -23,7 +23,7 @@ jobs:
               uses: bufbuild/buf-action@v1
               with: 
                 push: false
-                breaking_against: .git#branch=main,subdir=protos
+                breaking_against: https://github.com/OctopusDeploy/kubernetes-monitor-contracts.git#branch=main,subdir=protos
             # - name: Build Dotnet library
             # - name: Build Golang library
 

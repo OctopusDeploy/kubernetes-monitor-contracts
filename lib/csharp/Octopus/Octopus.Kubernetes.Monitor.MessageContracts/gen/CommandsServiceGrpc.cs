@@ -9,7 +9,7 @@ using grpc = global::Grpc.Core;
 
 namespace Octopus.Kubernetes.Monitor.MessageContracts {
   /// <summary>
-  /// Service for receiving commands from the server, follows a subscription model using a long lived RPC stream 
+  /// Service for receiving commands from the server, follows a subscription model using a long lived RPC stream
   /// </summary>
   public static partial class CommandsService
   {

@@ -924,7 +924,7 @@ var File_live_status_service_proto protoreflect.FileDescriptor
 
 const file_live_status_service_proto_rawDesc = "" +
 	"\n" +
-	"\x19live_status_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x19desired_resource_id.proto\x1a\x10cluster_id.proto\x1a\x16resource_details.proto\x1a\x11sync_status.proto\x1a\x13yaml_manifest.proto\"\x82\x04\n" +
+	"\x19live_status_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x10cluster_id.proto\x1a\x19desired_resource_id.proto\x1a\x16resource_details.proto\x1a\x11sync_status.proto\x1a\x13yaml_manifest.proto\"\x82\x04\n" +
 	"\x1fUpdateMonitoredResourcesRequest\x12N\n" +
 	"\x17application_instance_id\x18\x01 \x01(\v2\x16.ApplicationInstanceIdR\x15applicationInstanceId\x12)\n" +
 	"\n" +
@@ -1106,8 +1106,8 @@ func file_live_status_service_proto_init() {
 		return
 	}
 	file_application_instance_id_proto_init()
-	file_desired_resource_id_proto_init()
 	file_cluster_id_proto_init()
+	file_desired_resource_id_proto_init()
 	file_resource_details_proto_init()
 	file_sync_status_proto_init()
 	file_yaml_manifest_proto_init()

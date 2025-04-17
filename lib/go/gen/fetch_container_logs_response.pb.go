@@ -85,7 +85,7 @@ var File_fetch_container_logs_response_proto protoreflect.FileDescriptor
 
 const file_fetch_container_logs_response_proto_rawDesc = "" +
 	"\n" +
-	"#fetch_container_logs_response.proto\x1a\x10session_id.proto\x1a\x0elog_line.proto\x1a\verror.proto\"\x9b\x01\n" +
+	"#fetch_container_logs_response.proto\x1a\verror.proto\x1a\x0elog_line.proto\x1a\x10session_id.proto\"\x9b\x01\n" +
 	"\x1aFetchContainerLogsResponse\x12)\n" +
 	"\n" +
 	"session_id\x18\x01 \x01(\v2\n" +
@@ -129,9 +129,9 @@ func file_fetch_container_logs_response_proto_init() {
 	if File_fetch_container_logs_response_proto != nil {
 		return
 	}
-	file_session_id_proto_init()
-	file_log_line_proto_init()
 	file_error_proto_init()
+	file_log_line_proto_init()
+	file_session_id_proto_init()
 	file_fetch_container_logs_response_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{

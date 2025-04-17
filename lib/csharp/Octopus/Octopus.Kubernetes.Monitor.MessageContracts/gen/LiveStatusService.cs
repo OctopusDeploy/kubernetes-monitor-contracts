@@ -25,8 +25,8 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlsaXZlX3N0YXR1c19zZXJ2aWNlLnByb3RvGh1hcHBsaWNhdGlvbl9pbnN0",
-            "YW5jZV9pZC5wcm90bxoZZGVzaXJlZF9yZXNvdXJjZV9pZC5wcm90bxoQY2x1",
-            "c3Rlcl9pZC5wcm90bxoWcmVzb3VyY2VfZGV0YWlscy5wcm90bxoRc3luY19z",
+            "YW5jZV9pZC5wcm90bxoQY2x1c3Rlcl9pZC5wcm90bxoZZGVzaXJlZF9yZXNv",
+            "dXJjZV9pZC5wcm90bxoWcmVzb3VyY2VfZGV0YWlscy5wcm90bxoRc3luY19z",
             "dGF0dXMucHJvdG8aE3lhbWxfbWFuaWZlc3QucHJvdG8iggQKH1VwZGF0ZU1v",
             "bml0b3JlZFJlc291cmNlc1JlcXVlc3QSTgoXYXBwbGljYXRpb25faW5zdGFu",
             "Y2VfaWQYASABKAsyFi5BcHBsaWNhdGlvbkluc3RhbmNlSWRSFWFwcGxpY2F0",
@@ -114,7 +114,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "bnRyYWN0cy9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNz",
             "YWdlQ29udHJhY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.ApplicationInstanceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.DesiredResourceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceDetailsReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatusReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.YamlManifestReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.ApplicationInstanceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.DesiredResourceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceDetailsReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatusReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.YamlManifestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceStatusCode), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.UpdateMonitoredResourcesRequest), global::Octopus.Kubernetes.Monitor.MessageContracts.UpdateMonitoredResourcesRequest.Parser, new[]{ "ApplicationInstanceId", "ClusterId", "PresentMonitoredResources", "ChildMonitoredResources", "MissingMonitoredResources", "UnknownMonitoredResources" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.UpdateMonitoredResourcesResponse), global::Octopus.Kubernetes.Monitor.MessageContracts.UpdateMonitoredResourcesResponse.Parser, null, null, null, null, null),

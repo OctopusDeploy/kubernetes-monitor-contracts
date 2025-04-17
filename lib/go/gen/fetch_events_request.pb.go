@@ -101,7 +101,7 @@ var File_fetch_events_request_proto protoreflect.FileDescriptor
 
 const file_fetch_events_request_proto_rawDesc = "" +
 	"\n" +
-	"\x1afetch_events_request.proto\x1a\x10session_id.proto\x1a\x10cluster_id.proto\"\xb0\x01\n" +
+	"\x1afetch_events_request.proto\x1a\x10cluster_id.proto\x1a\x10session_id.proto\"\xb0\x01\n" +
 	"\x12FetchEventsRequest\x12)\n" +
 	"\n" +
 	"session_id\x18\x01 \x01(\v2\n" +
@@ -146,8 +146,8 @@ func file_fetch_events_request_proto_init() {
 	if File_fetch_events_request_proto != nil {
 		return
 	}
-	file_session_id_proto_init()
 	file_cluster_id_proto_init()
+	file_session_id_proto_init()
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{

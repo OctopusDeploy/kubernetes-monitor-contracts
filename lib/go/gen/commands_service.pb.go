@@ -455,7 +455,7 @@ var File_commands_service_proto protoreflect.FileDescriptor
 
 const file_commands_service_proto_rawDesc = "" +
 	"\n" +
-	"\x16commands_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x19desired_resource_id.proto\x1a\x10cluster_id.proto\x1a\x16resource_details.proto\x1a\x13yaml_manifest.proto\"\x88\x01\n" +
+	"\x16commands_service.proto\x1a\x1dapplication_instance_id.proto\x1a\x10cluster_id.proto\x1a\x19desired_resource_id.proto\x1a\x16resource_details.proto\x1a\x13yaml_manifest.proto\"\x88\x01\n" +
 	"\x14ClientToServerStream\x12e\n" +
 	"\x1erequest_initialization_command\x18\x01 \x01(\v2\x1d.RequestInitializationCommandH\x00R\x1crequestInitializationCommandB\t\n" +
 	"\acommand\"\x1e\n" +
@@ -543,8 +543,8 @@ func file_commands_service_proto_init() {
 		return
 	}
 	file_application_instance_id_proto_init()
-	file_desired_resource_id_proto_init()
 	file_cluster_id_proto_init()
+	file_desired_resource_id_proto_init()
 	file_resource_details_proto_init()
 	file_yaml_manifest_proto_init()
 	file_commands_service_proto_msgTypes[0].OneofWrappers = []any{

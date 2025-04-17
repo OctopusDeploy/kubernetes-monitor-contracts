@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.1...v0.3.3) (2025-04-17)
+
+
+### Miscellaneous Chores
+
+* release 0.3.3 ([#17](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/17)) ([7482b7b](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/7482b7b4c7c420a8802c879da136c03ec1bfbc2d))
+
 ## [0.3.1](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.0...v0.3.1) (2025-04-17)
 
 

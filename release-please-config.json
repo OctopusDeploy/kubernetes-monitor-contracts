@@ -8,7 +8,7 @@
       "release-type": "simple",
       "versioning": "default",
       "extra-files": [
-        "lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/Octopus.Kubernetes.Monitor.MessageContracts.csproj"
+        "Octopus/Octopus.Kubernetes.Monitor.MessageContracts/Octopus.Kubernetes.Monitor.MessageContracts.csproj"
       ]
     },
     "lib/go": {

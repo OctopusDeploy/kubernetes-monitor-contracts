@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.3...v0.3.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* fix go mod ([#19](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/19)) ([4b2c6d7](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/4b2c6d7f4929c1a18f67ee10a4a7376756afb1a5))
+
 ## [0.3.3](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.1...v0.3.3) (2025-04-17)
 
 

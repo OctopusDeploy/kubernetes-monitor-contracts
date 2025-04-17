@@ -10,7 +10,7 @@ on:
 jobs:
   build-pr:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.event.pull_request.user.login != 'team-modern-deployments-bot'
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.user.login != 'team-modern-deployments-bot' }}
     permissions: # https://github.com/dorny/test-reporter/issues/168
       statuses: write
       checks: write
@@ -37,7 +37,7 @@ jobs:
 
   build-release:
     runs-on: ubuntu-latest
-    if: github.event_name == 'release' && ${{ startsWith(github.event.release.tag_name, 'csharp-sdk') }}
+    if: ${{ github.event_name == 'release' && startsWith(github.event.release.tag_name, 'csharp-sdk') }}
     permissions: # https://github.com/dorny/test-reporter/issues/168
       statuses: write
       checks: write

@@ -1,7 +1,8 @@
 syntax = "proto3";
+
 import "fetch_events_request.proto";
 import "fetch_events_response.proto";
 
 service FetchEventsService {
-  rpc FetchEvents (stream FetchEventsResponse) returns (stream FetchEventsRequest);
+  rpc FetchEvents(stream FetchEventsResponse) returns (stream FetchEventsRequest);
 }

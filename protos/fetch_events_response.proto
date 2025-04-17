@@ -1,7 +1,8 @@
 syntax = "proto3";
-import "session_id.proto";
-import "event.proto";
+
 import "error.proto";
+import "event.proto";
+import "session_id.proto";
 
 message FetchEventsResponse {
   SessionId session_id = 1;

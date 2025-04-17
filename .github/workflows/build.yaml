@@ -9,7 +9,7 @@ on:
         types: [opened, synchronize, reopened]
 
 jobs: 
-    test: 
+    build: 
         runs-on: ubuntu-latest
         permissions: # https://github.com/dorny/test-reporter/issues/168
             statuses: write
@@ -23,7 +23,6 @@ jobs:
               uses: bufbuild/buf-action@v1
               with: 
                 push: false
-                
             # - name: Build Dotnet library
             # - name: Build Golang library
 

@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 import "application_instance_id.proto";
-import "desired_resource_id.proto";
 import "cluster_id.proto";
+import "desired_resource_id.proto";
 import "resource_details.proto";
 import "sync_status.proto";
 import "yaml_manifest.proto";
 
 // Service to update the status of Kubernetes resources
 service LiveStatusService {
-  rpc UpdateMonitoredResources (UpdateMonitoredResourcesRequest) returns (UpdateMonitoredResourcesResponse);
-  rpc ReplaceMonitoredResources (ReplaceMonitoredResourcesRequest) returns (ReplaceMonitoredResourcesResponse);
-  rpc DeleteChildMonitoredResources (DeleteChildMonitoredResourcesRequest) returns (DeleteChildMonitoredResourcesResponse);
+  rpc UpdateMonitoredResources(UpdateMonitoredResourcesRequest) returns (UpdateMonitoredResourcesResponse);
+  rpc ReplaceMonitoredResources(ReplaceMonitoredResourcesRequest) returns (ReplaceMonitoredResourcesResponse);
+  rpc DeleteChildMonitoredResources(DeleteChildMonitoredResourcesRequest) returns (DeleteChildMonitoredResourcesResponse);
 }
 
 // Request to add new resources to the live status or update the status of resources already being tracked

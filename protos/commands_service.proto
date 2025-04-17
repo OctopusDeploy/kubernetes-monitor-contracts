@@ -1,14 +1,14 @@
 syntax = "proto3";
 
 import "application_instance_id.proto";
-import "desired_resource_id.proto";
 import "cluster_id.proto";
+import "desired_resource_id.proto";
 import "resource_details.proto";
 import "yaml_manifest.proto";
 
-// Service for receiving commands from the server, follows a subscription model using a long lived RPC stream 
+// Service for receiving commands from the server, follows a subscription model using a long lived RPC stream
 service CommandsService {
-  rpc SubscribeToCommands (stream ClientToServerStream) returns (stream ServerToClientStream);
+  rpc SubscribeToCommands(stream ClientToServerStream) returns (stream ServerToClientStream);
 }
 
 // Request to initiate a subscription

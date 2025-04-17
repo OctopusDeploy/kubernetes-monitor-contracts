@@ -44,11 +44,21 @@ jobs:
         run: |
           echo "version=${{ github.event.release.tag_name }}" >> "$GITHUB_ENV"
 
-      - name: Build csharp sdk
-        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ env.version }} --output .
+      - name: Build csharp sdk debug
+        if: github.event_name == 'pull_request'
+        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Debug /p:Version=${{ env.version }} --output .
 
+      - name: Build csharp sdk release
+        if: github.event_name == 'release'
+        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ env.version }} --output . 
+
+        # Debug
       - uses: actions/upload-artifact@v4
         name: Upload csharp sdk
         with:
           path: Octopus.Kubernetes.Monitor.MessageContracts.${{ env.version }}.nupkg
+      
+      # Publish 
+      - name: Publish to feedz
+        run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ env.version }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}
 

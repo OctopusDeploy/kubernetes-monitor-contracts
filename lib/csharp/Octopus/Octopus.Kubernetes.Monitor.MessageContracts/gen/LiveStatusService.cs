@@ -109,10 +109,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "GiIuUmVwbGFjZU1vbml0b3JlZFJlc291cmNlc1Jlc3BvbnNlEm4KHURlbGV0",
             "ZUNoaWxkTW9uaXRvcmVkUmVzb3VyY2VzEiUuRGVsZXRlQ2hpbGRNb25pdG9y",
             "ZWRSZXNvdXJjZXNSZXF1ZXN0GiYuRGVsZXRlQ2hpbGRNb25pdG9yZWRSZXNv",
-            "dXJjZXNSZXNwb25zZUKDAUIWTGl2ZVN0YXR1c1NlcnZpY2VQcm90b1ABWjln",
+            "dXJjZXNSZXNwb25zZUKKAUIWTGl2ZVN0YXR1c1NlcnZpY2VQcm90b1ABWkBn",
             "aXRodWIuY29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRlcy1tb25pdG9yLWNv",
-            "bnRyYWN0cy9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNz",
-            "YWdlQ29udHJhY3RzYgZwcm90bzM="));
+            "bnRyYWN0cy9saWIvZ28vZ2VuqgIrT2N0b3B1cy5LdWJlcm5ldGVzLk1vbml0",
+            "b3IuTWVzc2FnZUNvbnRyYWN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.ApplicationInstanceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.DesiredResourceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceDetailsReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatusReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.YamlManifestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceStatusCode), }, null, new pbr::GeneratedClrTypeInfo[] {

@@ -485,7 +485,7 @@ const file_commands_service_proto_rawDesc = "" +
 	"\aVersion\x12\x14\n" +
 	"\x05value\x18\x01 \x01(\tR\x05value2Z\n" +
 	"\x0fCommandsService\x12G\n" +
-	"\x13SubscribeToCommands\x12\x15.ClientToServerStream\x1a\x15.ServerToClientStream(\x010\x01B\x81\x01B\x14CommandsServiceProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x13SubscribeToCommands\x12\x15.ClientToServerStream\x1a\x15.ServerToClientStream(\x010\x01B\x88\x01B\x14CommandsServiceProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_commands_service_proto_rawDescOnce sync.Once

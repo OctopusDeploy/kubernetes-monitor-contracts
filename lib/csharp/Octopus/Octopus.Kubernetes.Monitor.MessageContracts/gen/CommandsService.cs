@@ -54,10 +54,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "c3RSCG1hbmlmZXN0Ih8KB1ZlcnNpb24SFAoFdmFsdWUYASABKAlSBXZhbHVl",
             "MloKD0NvbW1hbmRzU2VydmljZRJHChNTdWJzY3JpYmVUb0NvbW1hbmRzEhUu",
             "Q2xpZW50VG9TZXJ2ZXJTdHJlYW0aFS5TZXJ2ZXJUb0NsaWVudFN0cmVhbSgB",
-            "MAFCgQFCFENvbW1hbmRzU2VydmljZVByb3RvUAFaOWdpdGh1Yi5jb20vb2N0",
-            "b3B1c2RlcGxveS9rdWJlcm5ldGVzLW1vbml0b3ItY29udHJhY3RzL2dlbqoC",
-            "K09jdG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1lc3NhZ2VDb250cmFjdHNi",
-            "BnByb3RvMw=="));
+            "MAFCiAFCFENvbW1hbmRzU2VydmljZVByb3RvUAFaQGdpdGh1Yi5jb20vb2N0",
+            "b3B1c2RlcGxveS9rdWJlcm5ldGVzLW1vbml0b3ItY29udHJhY3RzL2xpYi9n",
+            "by9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNzYWdlQ29u",
+            "dHJhY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.ApplicationInstanceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ClusterIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.DesiredResourceIdReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.ResourceDetailsReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.YamlManifestReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

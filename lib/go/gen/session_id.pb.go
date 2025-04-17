@@ -71,7 +71,7 @@ const file_session_id_proto_rawDesc = "" +
 	"\n" +
 	"\x10session_id.proto\"!\n" +
 	"\tSessionId\x12\x14\n" +
-	"\x05value\x18\x01 \x01(\tR\x05valueB{B\x0eSessionIdProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x05value\x18\x01 \x01(\tR\x05valueB\x82\x01B\x0eSessionIdProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_session_id_proto_rawDescOnce sync.Once

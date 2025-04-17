@@ -71,7 +71,7 @@ const file_desired_resource_id_proto_rawDesc = "" +
 	"\n" +
 	"\x19desired_resource_id.proto\")\n" +
 	"\x11DesiredResourceId\x12\x14\n" +
-	"\x05value\x18\x01 \x01(\tR\x05valueB\x83\x01B\x16DesiredResourceIdProtoP\x01Z9github.com/octopusdeploy/kubernetes-monitor-contracts/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x05value\x18\x01 \x01(\tR\x05valueB\x8a\x01B\x16DesiredResourceIdProtoP\x01Z@github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_desired_resource_id_proto_rawDescOnce sync.Once

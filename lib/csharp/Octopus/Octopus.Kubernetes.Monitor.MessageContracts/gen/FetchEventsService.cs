@@ -27,10 +27,11 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "ChpmZXRjaF9ldmVudHNfc2VydmljZS5wcm90bxoaZmV0Y2hfZXZlbnRzX3Jl",
             "cXVlc3QucHJvdG8aG2ZldGNoX2V2ZW50c19yZXNwb25zZS5wcm90bzJSChJG",
             "ZXRjaEV2ZW50c1NlcnZpY2USPAoLRmV0Y2hFdmVudHMSFC5GZXRjaEV2ZW50",
-            "c1Jlc3BvbnNlGhMuRmV0Y2hFdmVudHNSZXF1ZXN0KAEwAUKEAUIXRmV0Y2hF",
-            "dmVudHNTZXJ2aWNlUHJvdG9QAVo5Z2l0aHViLmNvbS9vY3RvcHVzZGVwbG95",
-            "L2t1YmVybmV0ZXMtbW9uaXRvci1jb250cmFjdHMvZ2VuqgIrT2N0b3B1cy5L",
-            "dWJlcm5ldGVzLk1vbml0b3IuTWVzc2FnZUNvbnRyYWN0c2IGcHJvdG8z"));
+            "c1Jlc3BvbnNlGhMuRmV0Y2hFdmVudHNSZXF1ZXN0KAEwAUKLAUIXRmV0Y2hF",
+            "dmVudHNTZXJ2aWNlUHJvdG9QAVpAZ2l0aHViLmNvbS9vY3RvcHVzZGVwbG95",
+            "L2t1YmVybmV0ZXMtbW9uaXRvci1jb250cmFjdHMvbGliL2dvL2dlbqoCK09j",
+            "dG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1lc3NhZ2VDb250cmFjdHNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Octopus.Kubernetes.Monitor.MessageContracts.FetchEventsRequestReflection.Descriptor, global::Octopus.Kubernetes.Monitor.MessageContracts.FetchEventsResponseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, null));

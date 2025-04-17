@@ -25,10 +25,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlkZXNpcmVkX3Jlc291cmNlX2lkLnByb3RvIikKEURlc2lyZWRSZXNvdXJj",
-            "ZUlkEhQKBXZhbHVlGAEgASgJUgV2YWx1ZUKDAUIWRGVzaXJlZFJlc291cmNl",
-            "SWRQcm90b1ABWjlnaXRodWIuY29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRl",
-            "cy1tb25pdG9yLWNvbnRyYWN0cy9nZW6qAitPY3RvcHVzLkt1YmVybmV0ZXMu",
-            "TW9uaXRvci5NZXNzYWdlQ29udHJhY3RzYgZwcm90bzM="));
+            "ZUlkEhQKBXZhbHVlGAEgASgJUgV2YWx1ZUKKAUIWRGVzaXJlZFJlc291cmNl",
+            "SWRQcm90b1ABWkBnaXRodWIuY29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRl",
+            "cy1tb25pdG9yLWNvbnRyYWN0cy9saWIvZ28vZ2VuqgIrT2N0b3B1cy5LdWJl",
+            "cm5ldGVzLk1vbml0b3IuTWVzc2FnZUNvbnRyYWN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

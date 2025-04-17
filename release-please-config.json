@@ -5,8 +5,11 @@
       "pull-request-title-pattern": "chore${scope}: release${component} ${version}",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": true,
-      "release-type": "dotnet",
-      "versioning": "default"
+      "release-type": "simple",
+      "versioning": "default",
+      "extra-files": [
+        "lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/Octopus.Kubernetes.Monitor.MessageContracts.csproj"
+      ]
     },
     "lib/go": {
       "component": "golang sdk",

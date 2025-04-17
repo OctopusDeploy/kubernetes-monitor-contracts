@@ -2,9 +2,6 @@ name: "Check"
 run-name: "Check"
 on:
     workflow_dispatch:
-    push:
-        branches:
-            - main
     pull_request:
         types: [opened, synchronize, reopened, labeled, unlabeled]
 
@@ -27,4 +24,3 @@ jobs:
                 format: ${{ github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'buf skip format') }}
                 breaking: ${{ github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'buf skip breaking') }}
                 breaking_against: https://github.com/OctopusDeploy/kubernetes-monitor-contracts.git#branch=main,subdir=protos
-

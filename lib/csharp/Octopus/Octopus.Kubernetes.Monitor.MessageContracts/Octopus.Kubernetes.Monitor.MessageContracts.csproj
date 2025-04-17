@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>Octopus.Kubernetes.Monitor.MessageContracts</PackageId>
+        <!-- x-release-please-version -->
         <Version>1.0.3</Version>
         <Authors>Octopus Deploy</Authors>
         <Company>Octopus Deploy</Company>

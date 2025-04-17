@@ -6,13 +6,38 @@ on:
     types: [published]
   pull_request:
     types: [opened, synchronize, reopened]
-env:
-  VERSION: ""
   
 jobs:
-  build:
+  build-pr:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login != 'team-modern-deployments-bot' && ${{ !startsWith(github.event.release.tag_name, 'v') }}
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.user.login != 'team-modern-deployments-bot' }}
+    permissions: # https://github.com/dorny/test-reporter/issues/168
+      statuses: write
+      checks: write
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set short git commit SHA
+        id: commit_sha
+        run: |
+          calculatedSha=$(git rev-parse --short ${{ github.sha }})
+          echo "SHORT_SHA=$calculatedSha" >> $GITHUB_OUTPUT
+      - name: Determine version
+        id: version
+        run: |
+          BRANCH_NAME=$(echo ${{ github.head_ref }} | tr '/' '-' | tr '_' '-')
+          CURRENT_VERSION=$(git describe --tags --abbrev=0 || echo "0.0.0")
+          VERSION="${CURRENT_VERSION}-${BRANCH_NAME}-${{ steps.commit_sha.outputs.SHORT_SHA }}"
+          echo "VERSION=${VERSION}" >> $GITHUB_OUTPUT
+      - name: Build csharp sdk debug
+        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Debug /p:Version=${{ steps.version.outputs.VERSION }} --output .
+      - name: Publish to feedz
+        run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ steps.version.outputs.VERSION }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}
+
+  build-release:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'release' && startsWith(github.event.release.tag_name, 'csharp-sdk') }}
     permissions: # https://github.com/dorny/test-reporter/issues/168
       statuses: write
       checks: write
@@ -21,37 +46,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set short git commit SHA
-        id: commit_sha
+      - name: Determine version
+        id: version
         run: |
-          calculatedSha=$(git rev-parse --short ${{ github.sha }})
-          echo "SHORT_SHA=$calculatedSha" >> $GITHUB_OUTPUT
-
-      - name: Determine PR version
-        if: github.event_name == 'pull_request'
-        id: new_version
-        run: |
-          BRANCH_NAME=$(echo ${{ github.head_ref }} | tr '/' '-' | tr '_' '-')
-          CURRENT_VERSION=$(git describe --tags --abbrev=0 || echo "0.0.0")
-          VERSION="${CURRENT_VERSION}-${BRANCH_NAME}-${{ steps.commit_sha.outputs.SHORT_SHA }}"
-          echo "VERSION=${VERSION}" >> "$GITHUB_ENV"
-
-      - name: Determine release version
-        if: github.event_name == 'release'
-        id: release_version
-        run: |
-          echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-sdk-v//')" >> "$GITHUB_ENV"
-
-      - name: Build csharp sdk debug
-        if: github.event_name == 'pull_request'
-        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Debug /p:Version=${{ env.VERSION }} --output .
-
+          echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-sdk-v//')" >> $GITHUB_OUTPUT
       - name: Build csharp sdk release
-        if: github.event_name == 'release'
-        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ env.VERSION }} --output . 
-      
-      # Publish 
+        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ steps.version.outputs.VERSION }} --output . 
       - name: Publish to feedz
-        run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ env.VERSION }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}
-
+        run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ steps.version.outputs.VERSION }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}

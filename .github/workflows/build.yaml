@@ -45,10 +45,10 @@ jobs:
           echo "version=${{ github.event.release.tag_name }}" >> "$GITHUB_ENV"
 
       - name: Build csharp sdk
-        run: dotnet pack --configuration Release /p:Version=${VERSION} --output .
+        run: dotnet pack --configuration Release /p:Version=${{ env.version }} --output .
 
       - uses: actions/upload-artifact@v4
         name: Upload csharp sdk
         with:
-          path: Octopus.Kubernetes.Monitor.MessageContracts.${VERSION}
+          path: Octopus.Kubernetes.Monitor.MessageContracts.${{ env.version }}
 

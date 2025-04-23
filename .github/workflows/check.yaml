@@ -16,7 +16,14 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
+            - name: Check for significant changes
+              id: changed-files-specific
+              uses: tj-actions/changed-files@v45
+              with:
+                files: |
+                  **.proto
             - name: Buf 
+              if: steps.changed-files-specific.outputs.any_changed == 'true'
               uses: bufbuild/buf-action@v1
               with: 
                 push: false

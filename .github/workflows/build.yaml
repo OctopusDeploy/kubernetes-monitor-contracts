@@ -43,7 +43,7 @@ jobs:
           echo "VERSION=${VERSION}" >> $GITHUB_OUTPUT
       - name: Build csharp sdk debug
         if: steps.changed-files-specific.outputs.any_changed == 'true'
-        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Debug /p:Version=${{ steps.version.outputs.VERSION }} --output .
+        run: dotnet pack csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Debug /p:Version=${{ steps.version.outputs.VERSION }} --output .
       - name: Publish to feedz
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ steps.version.outputs.VERSION }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}
@@ -64,6 +64,6 @@ jobs:
         run: |
           echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-sdk-v//')" >> $GITHUB_OUTPUT
       - name: Build csharp sdk release
-        run: dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ steps.version.outputs.VERSION }} --output . 
+        run: dotnet pack csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ steps.version.outputs.VERSION }} --output . 
       - name: Publish to feedz
         run: dotnet nuget push Octopus.Kubernetes.Monitor.MessageContracts.${{ steps.version.outputs.VERSION }}.nupkg --source https://f.feedz.io/octopus-deploy/dependencies/nuget/index.json --api-key ${{secrets.FEEDZ_API_KEY}}

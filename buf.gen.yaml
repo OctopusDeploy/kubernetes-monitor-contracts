@@ -4,19 +4,19 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: github.com/octopusdeploy/kubernetes-monitor-contracts/lib/go/gen
+      value: github.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts
     - file_option: csharp_namespace
       value: Octopus.Kubernetes.Monitor.MessageContracts
 plugins:
   - remote: buf.build/protocolbuffers/csharp:v30.2
-    out: lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
+    out: csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
   - remote: buf.build/grpc/csharp:v1.71.0
-    out: lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
+    out: csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
   - remote: buf.build/protocolbuffers/go:v1.36.6
-    out: lib/go/gen
+    out: go/pkg/message_contracts
     opt: paths=source_relative
   - remote: buf.build/grpc/go:v1.5.1
-    out: lib/go/gen
+    out: go/pkg/message_contracts
     opt: paths=source_relative
   
 inputs:

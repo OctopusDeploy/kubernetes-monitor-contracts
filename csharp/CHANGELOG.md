@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-sdk-v0.3.4...csharp-sdk-v0.3.5) (2025-05-06)
+
+
+### Bug Fixes
+
+* move folders ([#24](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/24)) ([7287b8e](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/7287b8efc3bd8c0c879bb9b9f27b9cb458a76526))
+
 ## [0.3.4](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-sdk-v0.3.3...csharp-sdk-v0.3.4) (2025-04-17)
 
 

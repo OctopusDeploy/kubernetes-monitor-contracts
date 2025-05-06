@@ -1,6 +1,6 @@
 {
   "packages": {
-    "lib/csharp": {
+    "csharp": {
       "component": "csharp-sdk",
       "changelog-path": "CHANGELOG.md",
       "release-type": "simple",
@@ -9,7 +9,7 @@
         "Octopus/Octopus.Kubernetes.Monitor.MessageContracts/Octopus.Kubernetes.Monitor.MessageContracts.csproj"
       ]
     },
-    "lib/go": {
+    "go": {
       "component": "golang-sdk",
       "changelog-path": "CHANGELOG.md",
       "include-component-in-tag": false,

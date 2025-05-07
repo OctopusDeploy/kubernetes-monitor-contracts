@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.5...v0.3.6) (2025-05-07)
+
+
+### Bug Fixes
+
+* Add license to go mod dir ([#27](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/27)) ([e0ce2cf](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/e0ce2cfeb95e1f2e139c14779cecb0dd05d7db11))
+
 ## [0.3.5](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/v0.3.4...v0.3.5) (2025-05-06)
 
 

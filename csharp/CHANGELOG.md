@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-sdk-v0.3.5...csharp-sdk-v0.4.0) (2025-05-26)
+
+
+### Features
+
+* Updated and re-generated proto contracts to include json diff ([#29](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/29)) ([32f1c3e](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/32f1c3ee96b9c963936c1e1b59473ff0f98ef922))
+
 ## [0.3.5](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-sdk-v0.3.4...csharp-sdk-v0.3.5) (2025-05-06)
 
 

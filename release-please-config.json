@@ -1,7 +1,7 @@
 {
   "packages": {
     "csharp": {
-      "component": "csharp-sdk",
+      "component": "csharp",
       "changelog-path": "CHANGELOG.md",
       "release-type": "simple",
       "versioning": "default",
@@ -10,9 +10,10 @@
       ]
     },
     "go": {
-      "component": "golang-sdk",
+      "component": "go",
       "changelog-path": "CHANGELOG.md",
-      "include-component-in-tag": false,
+      "include-component-in-tag": true,
+      "tag-separator": "/",
       "include-v-in-tag": true,
       "release-type": "go",
       "versioning": "default"

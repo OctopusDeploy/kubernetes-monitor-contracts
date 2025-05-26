@@ -26,7 +26,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
           string.Concat(
             "Ch1hcHBsaWNhdGlvbl9pbnN0YW5jZV9pZC5wcm90byItChVBcHBsaWNhdGlv",
             "bkluc3RhbmNlSWQSFAoFdmFsdWUYASABKAlSBXZhbHVlQpwBQhpBcHBsaWNh",
-            "dGlvbkluc3RhbmNlSWRQcm90b1ABWk5naXRodWIuY29tL29jdG9wdXNkZXBs",
+            "dGlvbkluc3RhbmNlSWRQcm90b1ABWk5naXRodWIuY29tL09jdG9wdXNEZXBs",
             "b3kva3ViZXJuZXRlcy1tb25pdG9yLWNvbnRyYWN0cy9nby9wa2cvbWVzc2Fn",
             "ZV9jb250cmFjdHOqAitPY3RvcHVzLkt1YmVybmV0ZXMuTW9uaXRvci5NZXNz",
             "YWdlQ29udHJhY3RzYgZwcm90bzM="));

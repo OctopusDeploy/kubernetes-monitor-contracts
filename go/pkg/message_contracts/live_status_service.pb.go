@@ -1009,7 +1009,7 @@ const file_live_status_service_proto_rawDesc = "" +
 	"\x11LiveStatusService\x12_\n" +
 	"\x18UpdateMonitoredResources\x12 .UpdateMonitoredResourcesRequest\x1a!.UpdateMonitoredResourcesResponse\x12b\n" +
 	"\x19ReplaceMonitoredResources\x12!.ReplaceMonitoredResourcesRequest\x1a\".ReplaceMonitoredResourcesResponse\x12n\n" +
-	"\x1dDeleteChildMonitoredResources\x12%.DeleteChildMonitoredResourcesRequest\x1a&.DeleteChildMonitoredResourcesResponseB\x98\x01B\x16LiveStatusServiceProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x1dDeleteChildMonitoredResources\x12%.DeleteChildMonitoredResourcesRequest\x1a&.DeleteChildMonitoredResourcesResponseB\x98\x01B\x16LiveStatusServiceProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_live_status_service_proto_rawDescOnce sync.Once

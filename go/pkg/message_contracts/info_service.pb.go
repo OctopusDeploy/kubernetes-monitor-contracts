@@ -165,7 +165,7 @@ const file_info_service_proto_rawDesc = "" +
 	"\x03Key\x18\x01 \x01(\tR\x03Key\x12\x14\n" +
 	"\x05Value\x18\x02 \x01(\tR\x05Value2;\n" +
 	"\vInfoService\x12,\n" +
-	"\aGetInfo\x12\x0f.GetInfoRequest\x1a\x10.GetInfoResponseB\x92\x01B\x10InfoServiceProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\aGetInfo\x12\x0f.GetInfoRequest\x1a\x10.GetInfoResponseB\x92\x01B\x10InfoServiceProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_info_service_proto_rawDescOnce sync.Once

@@ -111,7 +111,7 @@ const file_fetch_events_request_proto_rawDesc = "" +
 	".ClusterIdR\tclusterId\x12\x1c\n" +
 	"\tnamespace\x18\x03 \x01(\tR\tnamespace\x12\x12\n" +
 	"\x04kind\x18\x04 \x01(\tR\x04kind\x12\x12\n" +
-	"\x04name\x18\x05 \x01(\tR\x04nameB\x99\x01B\x17FetchEventsRequestProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x04name\x18\x05 \x01(\tR\x04nameB\x99\x01B\x17FetchEventsRequestProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_fetch_events_request_proto_rawDescOnce sync.Once

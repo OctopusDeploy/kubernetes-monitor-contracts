@@ -92,7 +92,7 @@ const file_fetch_container_logs_response_proto_rawDesc = "" +
 	".SessionIdR\tsessionId\x12%\n" +
 	"\tlog_lines\x18\x02 \x03(\v2\b.LogLineR\blogLines\x12!\n" +
 	"\x05error\x18\x03 \x01(\v2\x06.ErrorH\x00R\x05error\x88\x01\x01B\b\n" +
-	"\x06_errorB\xa1\x01B\x1fFetchContainerLogsResponseProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x06_errorB\xa1\x01B\x1fFetchContainerLogsResponseProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_fetch_container_logs_response_proto_rawDescOnce sync.Once

@@ -120,7 +120,7 @@ const file_fetch_container_logs_request_proto_rawDesc = "" +
 	"\x17show_previous_container\x18\x05 \x01(\bR\x15showPreviousContainer\x12)\n" +
 	"\n" +
 	"cluster_id\x18\x06 \x01(\v2\n" +
-	".ClusterIdR\tclusterIdB\xa0\x01B\x1eFetchContainerLogsRequestProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	".ClusterIdR\tclusterIdB\xa0\x01B\x1eFetchContainerLogsRequestProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_fetch_container_logs_request_proto_rawDescOnce sync.Once

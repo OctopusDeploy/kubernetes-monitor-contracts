@@ -80,6 +80,7 @@ type SyncStatus struct {
 	state          protoimpl.MessageState `protogen:"open.v1"`
 	SyncStatusCode SyncStatusCode         `protobuf:"varint,1,opt,name=sync_status_code,json=syncStatusCode,proto3,enum=SyncStatusCode" json:"sync_status_code,omitempty"`
 	Message        string                 `protobuf:"bytes,2,opt,name=message,proto3" json:"message,omitempty"`
+	JsonPatch      string                 `protobuf:"bytes,3,opt,name=json_patch,json=jsonPatch,proto3" json:"json_patch,omitempty"`
 	unknownFields  protoimpl.UnknownFields
 	sizeCache      protoimpl.SizeCache
 }
@@ -128,21 +129,30 @@ func (x *SyncStatus) GetMessage() string {
 	return ""
 }
 
+func (x *SyncStatus) GetJsonPatch() string {
+	if x != nil {
+		return x.JsonPatch
+	}
+	return ""
+}
+
 var File_sync_status_proto protoreflect.FileDescriptor
 
 const file_sync_status_proto_rawDesc = "" +
 	"\n" +
-	"\x11sync_status.proto\"a\n" +
+	"\x11sync_status.proto\"\x80\x01\n" +
 	"\n" +
 	"SyncStatus\x129\n" +
 	"\x10sync_status_code\x18\x01 \x01(\x0e2\x0f.SyncStatusCodeR\x0esyncStatusCode\x12\x18\n" +
-	"\amessage\x18\x02 \x01(\tR\amessage*\xb1\x01\n" +
+	"\amessage\x18\x02 \x01(\tR\amessage\x12\x1d\n" +
+	"\n" +
+	"json_patch\x18\x03 \x01(\tR\tjsonPatch*\xb1\x01\n" +
 	"\x0eSyncStatusCode\x12 \n" +
 	"\x1cSYNC_STATUS_CODE_UNSPECIFIED\x10\x00\x12\x1c\n" +
 	"\x18SYNC_STATUS_CODE_UNKNOWN\x10\x01\x12\"\n" +
 	"\x1eSYNC_STATUS_CODE_NOTAPPLICABLE\x10\x02\x12\x1b\n" +
 	"\x17SYNC_STATUS_CODE_INSYNC\x10\x03\x12\x1e\n" +
-	"\x1aSYNC_STATUS_CODE_OUTOFSYNC\x10\x04B\x91\x01B\x0fSyncStatusProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x1aSYNC_STATUS_CODE_OUTOFSYNC\x10\x04B\x91\x01B\x0fSyncStatusProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_sync_status_proto_rawDescOnce sync.Once

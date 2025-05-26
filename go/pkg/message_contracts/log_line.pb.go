@@ -81,7 +81,7 @@ const file_log_line_proto_rawDesc = "" +
 	"\x0elog_line.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"]\n" +
 	"\aLogLine\x12\x18\n" +
 	"\amessage\x18\x01 \x01(\tR\amessage\x128\n" +
-	"\ttimestamp\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampR\ttimestampB\x8e\x01B\fLogLineProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\ttimestamp\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampR\ttimestampB\x8e\x01B\fLogLineProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_log_line_proto_rawDescOnce sync.Once

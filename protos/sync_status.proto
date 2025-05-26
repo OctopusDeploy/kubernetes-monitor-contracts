@@ -3,6 +3,7 @@ syntax = "proto3";
 message SyncStatus {
   SyncStatusCode sync_status_code = 1;
   string message = 2;
+  string json_patch = 3;
 }
 
 enum SyncStatusCode {

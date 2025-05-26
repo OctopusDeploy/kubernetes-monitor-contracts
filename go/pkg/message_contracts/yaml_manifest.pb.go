@@ -71,7 +71,7 @@ const file_yaml_manifest_proto_rawDesc = "" +
 	"\n" +
 	"\x13yaml_manifest.proto\"$\n" +
 	"\fYamlManifest\x12\x14\n" +
-	"\x05value\x18\x01 \x01(\tR\x05valueB\x93\x01B\x11YamlManifestProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"\x05value\x18\x01 \x01(\tR\x05valueB\x93\x01B\x11YamlManifestProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_yaml_manifest_proto_rawDescOnce sync.Once

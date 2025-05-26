@@ -29,7 +29,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "b2RlEhoKFkVSUk9SX0NPREVfVU5TUEVDSUZJRUQQABIZChVFUlJPUl9DT0RF",
             "X1VORVhQRUNURUQQARIXChNFUlJPUl9DT0RFX0NPTkZMSUNUEAISGAoURVJS",
             "T1JfQ09ERV9OT1RfRk9VTkQQA0KMAUIKRXJyb3JQcm90b1ABWk5naXRodWIu",
-            "Y29tL29jdG9wdXNkZXBsb3kva3ViZXJuZXRlcy1tb25pdG9yLWNvbnRyYWN0",
+            "Y29tL09jdG9wdXNEZXBsb3kva3ViZXJuZXRlcy1tb25pdG9yLWNvbnRyYWN0",
             "cy9nby9wa2cvbWVzc2FnZV9jb250cmFjdHOqAitPY3RvcHVzLkt1YmVybmV0",
             "ZXMuTW9uaXRvci5NZXNzYWdlQ29udHJhY3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,

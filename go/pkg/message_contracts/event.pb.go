@@ -155,7 +155,7 @@ const file_event_proto_rawDesc = "" +
 	"\x04type\x18\t \x01(\tR\x04type\x12)\n" +
 	"\bmanifest\x18\n" +
 	" \x01(\v2\r.YamlManifestR\bmanifestB\x8c\x01B\n" +
-	"EventProtoP\x01ZNgithub.com/octopusdeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
+	"EventProtoP\x01ZNgithub.com/OctopusDeploy/kubernetes-monitor-contracts/go/pkg/message_contracts\xaa\x02+Octopus.Kubernetes.Monitor.MessageContractsb\x06proto3"
 
 var (
 	file_event_proto_rawDescOnce sync.Once

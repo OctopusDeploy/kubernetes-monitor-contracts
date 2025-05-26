@@ -29,7 +29,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             "ZXNwb25zZRIpCgpzZXNzaW9uX2lkGAEgASgLMgouU2Vzc2lvbklkUglzZXNz",
             "aW9uSWQSHgoGZXZlbnRzGAIgAygLMgYuRXZlbnRSBmV2ZW50cxIhCgVlcnJv",
             "chgDIAEoCzIGLkVycm9ySABSBWVycm9yiAEBQggKBl9lcnJvckKaAUIYRmV0",
-            "Y2hFdmVudHNSZXNwb25zZVByb3RvUAFaTmdpdGh1Yi5jb20vb2N0b3B1c2Rl",
+            "Y2hFdmVudHNSZXNwb25zZVByb3RvUAFaTmdpdGh1Yi5jb20vT2N0b3B1c0Rl",
             "cGxveS9rdWJlcm5ldGVzLW1vbml0b3ItY29udHJhY3RzL2dvL3BrZy9tZXNz",
             "YWdlX2NvbnRyYWN0c6oCK09jdG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1l",
             "c3NhZ2VDb250cmFjdHNiBnByb3RvMw=="));

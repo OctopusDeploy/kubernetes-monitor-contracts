@@ -24,21 +24,21 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
     static SyncStatusReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFzeW5jX3N0YXR1cy5wcm90byJhCgpTeW5jU3RhdHVzEjkKEHN5bmNfc3Rh",
-            "dHVzX2NvZGUYASABKA4yDy5TeW5jU3RhdHVzQ29kZVIOc3luY1N0YXR1c0Nv",
-            "ZGUSGAoHbWVzc2FnZRgCIAEoCVIHbWVzc2FnZSqxAQoOU3luY1N0YXR1c0Nv",
-            "ZGUSIAocU1lOQ19TVEFUVVNfQ09ERV9VTlNQRUNJRklFRBAAEhwKGFNZTkNf",
-            "U1RBVFVTX0NPREVfVU5LTk9XThABEiIKHlNZTkNfU1RBVFVTX0NPREVfTk9U",
-            "QVBQTElDQUJMRRACEhsKF1NZTkNfU1RBVFVTX0NPREVfSU5TWU5DEAMSHgoa",
-            "U1lOQ19TVEFUVVNfQ09ERV9PVVRPRlNZTkMQBEKRAUIPU3luY1N0YXR1c1By",
-            "b3RvUAFaTmdpdGh1Yi5jb20vb2N0b3B1c2RlcGxveS9rdWJlcm5ldGVzLW1v",
-            "bml0b3ItY29udHJhY3RzL2dvL3BrZy9tZXNzYWdlX2NvbnRyYWN0c6oCK09j",
-            "dG9wdXMuS3ViZXJuZXRlcy5Nb25pdG9yLk1lc3NhZ2VDb250cmFjdHNiBnBy",
-            "b3RvMw=="));
+            "ChFzeW5jX3N0YXR1cy5wcm90byKAAQoKU3luY1N0YXR1cxI5ChBzeW5jX3N0",
+            "YXR1c19jb2RlGAEgASgOMg8uU3luY1N0YXR1c0NvZGVSDnN5bmNTdGF0dXND",
+            "b2RlEhgKB21lc3NhZ2UYAiABKAlSB21lc3NhZ2USHQoKanNvbl9wYXRjaBgD",
+            "IAEoCVIJanNvblBhdGNoKrEBCg5TeW5jU3RhdHVzQ29kZRIgChxTWU5DX1NU",
+            "QVRVU19DT0RFX1VOU1BFQ0lGSUVEEAASHAoYU1lOQ19TVEFUVVNfQ09ERV9V",
+            "TktOT1dOEAESIgoeU1lOQ19TVEFUVVNfQ09ERV9OT1RBUFBMSUNBQkxFEAIS",
+            "GwoXU1lOQ19TVEFUVVNfQ09ERV9JTlNZTkMQAxIeChpTWU5DX1NUQVRVU19D",
+            "T0RFX09VVE9GU1lOQxAEQpEBQg9TeW5jU3RhdHVzUHJvdG9QAVpOZ2l0aHVi",
+            "LmNvbS9PY3RvcHVzRGVwbG95L2t1YmVybmV0ZXMtbW9uaXRvci1jb250cmFj",
+            "dHMvZ28vcGtnL21lc3NhZ2VfY29udHJhY3RzqgIrT2N0b3B1cy5LdWJlcm5l",
+            "dGVzLk1vbml0b3IuTWVzc2FnZUNvbnRyYWN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatusCode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatus), global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatus.Parser, new[]{ "SyncStatusCode", "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatus), global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatus.Parser, new[]{ "SyncStatusCode", "Message", "JsonPatch" }, null, null, null, null)
           }));
     }
     #endregion
@@ -93,6 +93,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
     public SyncStatus(SyncStatus other) : this() {
       syncStatusCode_ = other.syncStatusCode_;
       message_ = other.message_;
+      jsonPatch_ = other.jsonPatch_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -126,6 +127,18 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       }
     }
 
+    /// <summary>Field number for the "json_patch" field.</summary>
+    public const int JsonPatchFieldNumber = 3;
+    private string jsonPatch_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string JsonPatch {
+      get { return jsonPatch_; }
+      set {
+        jsonPatch_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -143,6 +156,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       }
       if (SyncStatusCode != other.SyncStatusCode) return false;
       if (Message != other.Message) return false;
+      if (JsonPatch != other.JsonPatch) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -152,6 +166,7 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       int hash = 1;
       if (SyncStatusCode != global::Octopus.Kubernetes.Monitor.MessageContracts.SyncStatusCode.Unspecified) hash ^= SyncStatusCode.GetHashCode();
       if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (JsonPatch.Length != 0) hash ^= JsonPatch.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -178,6 +193,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
         output.WriteRawTag(18);
         output.WriteString(Message);
       }
+      if (JsonPatch.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(JsonPatch);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -196,6 +215,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
         output.WriteRawTag(18);
         output.WriteString(Message);
       }
+      if (JsonPatch.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(JsonPatch);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -211,6 +234,9 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       }
       if (Message.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (JsonPatch.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(JsonPatch);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -229,6 +255,9 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
       }
       if (other.Message.Length != 0) {
         Message = other.Message;
+      }
+      if (other.JsonPatch.Length != 0) {
+        JsonPatch = other.JsonPatch;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -257,6 +286,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
             Message = input.ReadString();
             break;
           }
+          case 26: {
+            JsonPatch = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -282,6 +315,10 @@ namespace Octopus.Kubernetes.Monitor.MessageContracts {
           }
           case 18: {
             Message = input.ReadString();
+            break;
+          }
+          case 26: {
+            JsonPatch = input.ReadString();
             break;
           }
         }

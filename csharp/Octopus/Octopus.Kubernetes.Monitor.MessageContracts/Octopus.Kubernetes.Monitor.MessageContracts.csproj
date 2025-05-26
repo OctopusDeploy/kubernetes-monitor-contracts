@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <PackageId>Octopus.Kubernetes.Monitor.MessageContracts</PackageId>
         
-        <Version>0.4.0</Version><!-- x-release-please-version -->
+        <Version>0.3.3</Version><!-- x-release-please-version -->
         <Authors>Octopus Deploy</Authors>
         <Company>Octopus Deploy</Company>
         <Copyright>Octopus Deploy Pty Ltd</Copyright>

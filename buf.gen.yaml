@@ -8,9 +8,9 @@ managed:
     - file_option: csharp_namespace
       value: Octopus.Kubernetes.Monitor.MessageContracts
 plugins:
-  - remote: buf.build/protocolbuffers/csharp:v30.2
+  - remote: buf.build/protocolbuffers/csharp:v31.0
     out: csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
-  - remote: buf.build/grpc/csharp:v1.71.0
+  - remote: buf.build/grpc/csharp:v1.72.0
     out: csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts/gen
   - remote: buf.build/protocolbuffers/go:v1.36.6
     out: go/pkg/message_contracts

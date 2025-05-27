@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-v0.5.0...csharp-v1.0.0) (2025-05-27)
+
+
+### Miscellaneous Chores
+
+* release initial 1.0.0 version ([#40](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/40)) ([929e784](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/929e784bc30bce7dfb4169e9ec0f61518e24b810))
+
 ## [0.5.0](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-v0.3.3...csharp-v0.5.0) (2025-05-27)
 
 

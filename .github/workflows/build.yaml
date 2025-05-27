@@ -50,7 +50,7 @@ jobs:
 
   build-release:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'release' && startsWith(github.event.release.tag_name, 'csharp-sdk')}}
+    if: ${{ github.event_name == 'release' && startsWith(github.event.release.tag_name, 'csharp')}}
     permissions: # https://github.com/dorny/test-reporter/issues/168
       statuses: write
       checks: write
@@ -62,7 +62,7 @@ jobs:
       - name: Determine version
         id: version
         run: |
-          echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-sdk-v//')" >> $GITHUB_OUTPUT
+          echo "VERSION=$(echo "${{ github.event.release.tag_name }}" | sed 's/^csharp-v//')" >> $GITHUB_OUTPUT
       - name: Build csharp sdk release
         run: dotnet pack csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts --configuration Release /p:Version=${{ steps.version.outputs.VERSION }} --output . 
       - name: Publish to feedz

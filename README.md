@@ -70,8 +70,8 @@ replace github.com/octopusdeploy/kubernetes-monitor-contracts => ../kubernetes-m
 
 ## Versioning 
 Each generated SDK is versioned and released at the same time however the version number differ slightly depending on the language's version number requirements e.g. For version `0.1.2` of the contracts would result in two Github releases/tags
-- Dotnet: `csharp-sdk: v0.1.2`
-- Go: `v0.1.2` 
+- Dotnet: `csharp: v0.1.2`
+- Go: `go/v0.1.2` - Due to how Go modules work the version number is prefixed with `go/` to include the sub directory the module is in from the root of the repository 
 
 For branch builds of the SDKs(Currently only the dotnet SDK is affected by this) the version number will be generated based on this following pattern
 ```

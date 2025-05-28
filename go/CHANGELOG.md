@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/go/v1.0.0...go/v1.0.1) (2025-05-28)
+
+
+### Miscellaneous Chores
+
+* release 1.0.1 ([#43](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/issues/43)) ([6b98ce7](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/6b98ce7505ac4444926836c0afbf0f573bc209c2))
+
 ## [1.0.0](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/go/v0.5.0...go/v1.0.0) (2025-05-27)
 
 

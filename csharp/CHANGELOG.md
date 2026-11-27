@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-v1.0.1...csharp-v2.0.0) (2026-11-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* the package now ships lib/net10.0 only. Consumers on net8.0 fail restore with NU1202 and must stay on 1.x.
+
+### Features
+
+* add .NET 10 target alongside net8.0 ([a5e1b2f](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/a5e1b2f8a2a5f083aac4165dfe4ccbe9a4cdd73c))
+* target net10.0 only ([2dc9159](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/commit/2dc9159b2d542eb16045f2a232b4547c016c6a67))
+
 ## [1.0.1](https://github.com/OctopusDeploy/kubernetes-monitor-contracts/compare/csharp-v1.0.0...csharp-v1.0.1) (2025-05-28)
 
 

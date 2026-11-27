@@ -18,7 +18,7 @@ This repository contains the Protobuf contracts and the generated gRPC SDKs that
 
 # Prerequisites 
 - [Buf CLI](https://buf.build/docs/cli/installation/)
-- [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [.NET 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 - [Go 1.24](https://go.dev/doc/install)
 
 Optionally

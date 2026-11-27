@@ -59,11 +59,35 @@ dotnet pack lib/csharp/Octopus/Octopus.Kubernetes.Monitor.MessageContracts -o ..
 ### Go SDK
 You can use a local version of the Go SDK by using a replace directive in the Kubernete's monitor Go module file. 
 
-```
-replace github.com/octopusdeploy/kubernetes-monitor-contracts => {PATH_TO_LOCAL_REPO}
+```go
+replace github.com/octopusdeploy/kubernetes-monitor-contracts/go => {PATH_TO_LOCAL_REPO}
 
 // Example
-replace github.com/octopusdeploy/kubernetes-monitor-contracts => ../kubernetes-monitor-contracts/lib/go
+replace github.com/octopusdeploy/kubernetes-monitor-contracts/go => ../kubernetes-monitor-contracts/go
+```
+
+### `build-local` script
+Two scripts have been provided to automate generating and installing local packages. The scripts will do the following by default: 
+1. Run `buf generate` to generate the gRPC SDKs from the Proto files - This will generate the SDKs for all of the languages
+2. Add a replace directive to the Kubernetes Monitor `go.mod` file assuming that the Kubernetes Project folder is at `../lobster-watcher`
+3. Update all the versions of any package references for to `Octopus.Kubernetes.Monitor.MessageContracts` to the local nuget package.
+
+**This script assumes that a local nuget package source has been configured already, the default location is `../LocalPackages`**
+
+#### Usage
+```bash
+# Bash
+./build-local.sh
+./build-local.sh --languages=go 
+
+# For more detailed information about available parameters
+./build-local.sh --help
+
+# Powershell
+./build-local.ps1 
+./build-local.ps1 --languages=go 
+# For more detailed information about available parameters
+get-help .\build-local.ps1 -full  
 ```
 
 # Configuration 
